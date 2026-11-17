@@ -1,0 +1,20 @@
+PASS  D01  Duplicate attendance for same employee/date                                       | actual: IntegrityError: UNIQUE constraint failed: attendance.emp_id, attendanc
+PASS  D02  Employee with negative salary                                                     | actual: IntegrityError: CHECK constraint failed: basic_salary > 0
+PASS  D03  Attendance with invalid status                                                    | actual: IntegrityError: CHECK constraint failed: status IN ('Present', 'Absent
+PASS  D04  Attendance for non-existent employee (FK)                                         | actual: IntegrityError: FOREIGN KEY constraint failed
+PASS  D05  Employee with unknown department (FK)                                             | actual: IntegrityError: FOREIGN KEY constraint failed
+PASS  D06  Duplicate payslip for same employee/month                                         | actual: IntegrityError: UNIQUE constraint failed: payroll.emp_id, payroll.pay_
+PASS  D07  Payroll month 13                                                                  | actual: IntegrityError: CHECK constraint failed: pay_month BETWEEN 1 AND 12
+PASS  D08  Leave end date before start date                                                  | actual: IntegrityError: CHECK constraint failed: end_date >= start_date
+PASS  D09  Duplicate department name                                                         | actual: IntegrityError: UNIQUE constraint failed: department.dept_name
+PASS  D10  Delete a department that still has employees (FK)                                 | actual: IntegrityError: FOREIGN KEY constraint failed
+PASS  D11  Seed: 40 employees                                                                | actual: 40
+PASS  D12  Seed: 3 months x 40 employees = 120 payslips                                      | actual: 120
+PASS  D13  Payroll arithmetic: gross - deductions = net on every row                         | actual: 0
+PASS  D14  Payroll gross = basic + HRA + DA on every row                                     | actual: 0
+PASS  D15  No attendance on a weekend                                                        | actual: 0
+PASS  D16  Every payslip's LOP days = working days - payable days                            | actual: 0
+PASS  D17  Orphan attendance rows (no employee)                                              | actual: 0
+PASS  D18  Payable days recomputed from attendance = stored payable_days (all 120 payslips)  | actual: 0
+
+18 passed, 0 failed

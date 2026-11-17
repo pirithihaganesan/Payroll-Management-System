@@ -1,0 +1,37 @@
+### Q3 Department-wise attendance, 2026-09
+dept_name | records | present_pct | absent_pct
+Sales | 176 | 78.98 | 13.64
+Operations | 176 | 80.11 | 10.23
+Finance | 176 | 85.8 | 7.95
+Engineering | 176 | 88.64 | 5.68
+Human Resources | 176 | 91.48 | 3.98
+
+### Q5 Department-wise payroll cost, Oct 2026
+dept_name | employees | total_gross | total_net | avg_net
+Human Resources | 8 | 372450.0 | 315271.13 | 39408.89
+Finance | 8 | 287950.0 | 241954.09 | 30244.26
+Engineering | 8 | 265200.0 | 214656.35 | 26832.04
+Sales | 8 | 260650.0 | 189637.73 | 23704.72
+Operations | 8 | 232700.0 | 189145.01 | 23643.13
+
+### Q6 Frequent absentees (>=3 absences)
+emp_id | emp_name | absent_days
+34 | Ravi Babu | 14
+39 | Ravi Murugan | 13
+40 | Revathi Kumar | 12
+8 | Arjun Iyer | 11
+20 | Arjun Sundaram | 11
+5 | Revathi Pillai | 10
+27 | Revathi Nair | 10
+9 | Manoj Sundaram | 9
+26 | Kavya Raj | 9
+14 | Karthik Nair | 8
+
+### Q12 Top 5 net salaries, Oct 2026
+emp_name | net_salary
+Kavya Kumar | 66470.0
+Kavya Iyer | 61160.0
+Lakshmi Nair | 56966.36
+Ravi Kumar | 46875.68
+Arjun Iyer | 46426.82
+

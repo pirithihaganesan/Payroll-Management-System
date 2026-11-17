@@ -1,0 +1,29 @@
+# Keystrokes for a manual run of the console app (java -cp "out:lib/*" payroll.Main --db ../database/payroll.db)
+# Each line is what you type at the prompt. Month 2026-10 is fully seeded.
+1          # Employee management
+1          # Add employee
+Asha Menon
+Engineering
+Senior Executive
+32000
+2025-01-06
+2          # Attendance
+1          # Mark attendance
+41         # the new employee's ID
+2026-11-02
+1          # Present
+09:00
+17:30
+3          # Leave management
+1          # Apply
+41
+2
+2026-11-04
+2026-11-05
+Fever
+3
+4          # Payroll
+3          # View payslip
+1
+2026-10
+0

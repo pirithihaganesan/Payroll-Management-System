@@ -1,0 +1,40 @@
+Input: emp 7, basic 52000, Aug 2026, present 16, half-day 1, paid leave 2
+
+==================== PAYSLIP ====================
+Employee : 7 - Employee 7
+Period   : 2026-08
+Working days 21 | Payable days 18.5 | LOP days 2.5
+--------------------------------------------------
+Basic                          52000.00
+HRA (20%)                      10400.00
+DA (10%)                        5200.00
+GROSS                          67600.00
+--------------------------------------------------
+PF (12% of basic)               6240.00
+Professional tax                 200.00
+Loss-of-pay deduction           8047.62
+TOTAL DEDUCTIONS               14487.62
+==================================================
+NET SALARY                     53112.38
+==================================================
+
+Input: emp 34, basic 12000, Oct 2026, present 17, half-day 2, paid leave 0
+
+==================== PAYSLIP ====================
+Employee : 34 - Employee 34
+Period   : 2026-10
+Working days 22 | Payable days 18.0 | LOP days 4.0
+--------------------------------------------------
+Basic                          12000.00
+HRA (20%)                       2400.00
+DA (10%)                        1200.00
+GROSS                          15600.00
+--------------------------------------------------
+PF (12% of basic)               1440.00
+Professional tax                 200.00
+Loss-of-pay deduction           2836.36
+TOTAL DEDUCTIONS                4476.36
+==================================================
+NET SALARY                     11123.64
+==================================================
+

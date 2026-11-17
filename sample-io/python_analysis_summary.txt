@@ -1,0 +1,36 @@
+PREPROCESSING REPORT
+------------------------------------------------------------
+Raw rows -> employees 40, attendance 2600, leave 65, payroll 120
+Duplicate attendance rows removed: 0
+Missing check-in/out (expected for Absent/Leave rows): 313 / 313
+Present/Half-Day rows lacking times: 0
+Full-day working-hour outliers outside [6.50, 10.50]: 0
+Payroll rows where gross - deductions != net: 0
+Attendance months covered: ['2026-08', '2026-09', '2026-10']
+
+KEY FINDINGS
+------------------------------------------------------------
+Absent rate by department (%):
+dept_name
+Sales              12.69
+Operations         10.00
+Human Resources     6.15
+Finance             5.77
+Engineering         5.00
+
+Top 5 employees by absent days:
+   34 Ravi Babu            14 days
+   39 Ravi Murugan         13 days
+   40 Revathi Kumar        12 days
+    8 Arjun Iyer           11 days
+   20 Arjun Sundaram       11 days
+
+Monthly payroll totals:
+         gross_salary  net_salary  lop_deduction
+month                                           
+2026-08     1418950.0  1132837.86      147132.14
+2026-09     1418950.0  1135625.68      144344.32
+2026-10     1418950.0  1150664.31      129305.69
+
+Average daily working hours (worked days): 8.43
+Weekday with highest absence: Thursday
