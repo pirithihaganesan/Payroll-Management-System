@@ -1,3 +1,10 @@
 *.class
 __pycache__/
 *.pyc
+
+# Local database and backup files
+*.backup
+
+# Generated frontend files
+web-app/frontend/node_modules/
+web-app/frontend/dist/
