@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" modified="2026-11-19T00:00:00.000Z" agent="ChatGPT" version="24.7.17">
+  <diagram id="paytrack-er" name="ER Diagram">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="DEPARTMENT&#10;PK dept_id&#10;dept_name" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8fbff;strokeColor=#243447;fontColor=#1f2937;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="80" y="100" width="270" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="DESIGNATION&#10;PK desig_id&#10;title" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8fbff;strokeColor=#243447;fontColor=#1f2937;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="430" y="100" width="270" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="EMPLOYEE&#10;PK emp_id&#10;emp_name&#10;FK dept_id&#10;FK desig_id&#10;basic_salary&#10;join_date&#10;status" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8fbff;strokeColor=#243447;fontColor=#1f2937;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="850" y="90" width="340" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="ATTENDANCE&#10;PK att_id&#10;FK emp_id&#10;att_date&#10;status&#10;check_in&#10;check_out&#10;working_hours" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8fbff;strokeColor=#243447;fontColor=#1f2937;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="80" y="480" width="340" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="LEAVE_RECORD&#10;PK leave_id&#10;FK emp_id&#10;leave_type&#10;start_date&#10;end_date&#10;days&#10;reason&#10;status" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8fbff;strokeColor=#243447;fontColor=#1f2937;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="520" y="470" width="380" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="PAYROLL&#10;PK payroll_id&#10;FK emp_id&#10;pay_month&#10;pay_year&#10;working_days&#10;payable_days&#10;lop_days&#10;basic&#10;hra&#10;da&#10;gross_salary&#10;pf_deduction&#10;prof_tax&#10;lop_deduction&#10;total_deductions&#10;net_salary&#10;generated_on" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8fbff;strokeColor=#243447;fontColor=#1f2937;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="390" width="500" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="20" value="1 : N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#3b647f;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1" source="2" target="4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="21" value="1 : N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#3b647f;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="22" value="1 : N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#3b647f;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1" source="4" target="5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="23" value="1 : N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#3b647f;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1" source="4" target="6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="24" value="1 : N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#3b647f;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1" source="4" target="7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
